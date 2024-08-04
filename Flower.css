@@ -1,0 +1,284 @@
+body{
+    scroll-behavior: smooth;
+}
+/* Header Section Starts */
+
+.nav-links .navbar a{
+    text-decoration: none;
+    color: #474448;
+    font-size: 1.1rem;
+    transition: .3s;
+}
+
+.icons .icon{
+    margin-left: 70px;
+    transition: .3s;
+}
+
+.nav-links .navbar a:hover{
+    transform: scale(1.2);
+    color: #0a0908;
+    font-weight: 500;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.424);
+    padding: 5px 10px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-top:#d81159 solid 2px;
+    border-right:#d81159 solid 2px;
+    border-bottom:#d81159 solid 2px;
+}
+
+.icons .icon:hover{
+    border: #d81159 solid 1px;
+    border-radius: 50%;
+}
+/* Header Section Ends */
+
+/* Body Section Starts */
+
+.main{
+    background-image:url('BlackFlower.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100vw;
+    height: 100vh;
+    opacity: 1;  
+}
+
+.content{
+    background-color: #00000075;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .4s;
+    opacity: 0;
+}
+
+.content:hover{
+    opacity: 1;
+    border-top:2px solid #d81159;
+    box-shadow: 2px 3px 10px #ffffff37;
+    margin:10px 700px;
+}
+
+.content img{
+    box-shadow: 2px 3px 10px #ffffffc8;
+    border-radius: 4px;
+}
+
+.content h3{
+    color: #ffffffc7;
+    display: inline;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 50px 0px;
+}
+
+.content span{
+    margin-top: 50px;
+    color: #da2c38;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.content #para{
+    margin-top: 30px;
+    color: #f1f0ea87 !important;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.content h4{
+    color: #ffffffd3;
+    font-size: 1rem;
+    line-height: 30px;
+    text-align: center;
+}
+
+.content p{
+    color: #e0ddcf92;
+    text-align: justify;
+}
+
+@media (min-width:1000px) {
+    .content:first-child{
+        margin:100px 600px;
+    }
+}
+/* Body Section Ends */
+
+/* About Section Starts */
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255,51,153,.05);
+}
+
+.heading span{
+    color: #ca1661;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-bottom: 1rem;
+}
+
+.about .row .video-container{
+    flex:1 1 20rem;
+    position: relative;
+}
+
+.about .row .video-container video{
+    width: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem rgba(0,0,0,0.1);
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .row .video-container h3{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    font-weight: 500;
+    color: #333;
+    width:100%;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.about .row .paragraph{
+    flex:1 1 40rem;
+}
+
+.about .row .paragraph h3{
+    font-size: 2rem;
+    color: #333;
+}
+
+.about .row .paragraph p{
+    font-size: 1rem;
+    color: grey;
+    line-height: 1.7rem;
+}
+
+.about .btn{
+    background-color: #ca1661;
+    color: #fff;
+    width:100px;
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1rem;
+    border-top: 5px dotted #fff;
+    font-weight: 700;
+    border-radius: 50%;
+    transition-property: transform;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* About Section Ends */
+
+/* Customer Section Starts */
+.icons-container{
+    background-color: #262425;
+}
+
+.icons-container .icons{
+    width:350px;
+    background-color: #ffff;
+    margin:20px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+.icons-container .icons:hover{
+    transform: rotate(20deg);
+}
+
+.icons-container .icons h3{
+    text-transform: capitalize;
+    box-shadow: 4px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 3px 0px;
+    transition: .3s;
+}
+
+.icons-container .icons h3:hover{
+    box-shadow: none;
+}
+
+.icons-container .icons span{
+    color: #da2c38;
+    text-align: center;
+    font-weight: 600;
+}
+/* Customer Section Ends */
+
+/* Footer Section Starts */
+.footer{
+    margin-top: 40px;
+    background:#252422;
+    padding: 20px;
+}
+
+.links a{
+    text-decoration: none;
+    display: block;
+    text-align: justify;
+    color: #ca1661;
+    line-height: 30px;
+    transition: .3s;
+    text-transform: capitalize;
+}
+
+.links h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.links a:hover{
+    width:100px;
+    border-bottom: 1px solid #ffffff74;
+}
+
+.footer .credit{
+    background-color: #fff;
+    padding: 20px;
+    margin-top:30px ;
+    text-align: center;
+    color:#da2c38;
+    font-size: 1.3rem;
+}
+
+.footer .credit span{
+    color: #252422;
+    font-weight:bolder;
+    text-decoration: 1px underline #ca1661;
+    line-height: 50px;
+}
+/* Footer Section Ends */
